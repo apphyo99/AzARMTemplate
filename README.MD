@@ -39,12 +39,17 @@ Open the integrated terminal in VS Code (Ctrl+`` or Cmd+`` on macOS) and navigat
 
 Run the validation command:
 
-
-
-
 ```
 az deployment group validate \
   --resource-group <YourResourceGroupName> \
   --template-file templates/mainTemplate.json \
   --parameters parameters/dev.parameters.json
 ```
+
+Run the create command:
+```
+az deployment group create \
+  --resource-group az-group-rg \
+  --template-file mainTemplate.json \
+  --parameters parameters.json
+  ```
